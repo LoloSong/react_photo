@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'turn';
+        src: url('../../fonts/icon/turn.eot') format('embedded-opentype'),
+         url('../../fonts/icon/turn.woff') format('woff'),
+         url('../../fonts/icon/turn.ttf') format('truetype'),
+         url('../../fonts/icon/turn.svg') format('svg')
+}
+.controller-unit{
+    display: inline-block;
+    margin: 0 5px;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    background-color: darkorange;
+    border-radius: 50%;
+    transform: scale(.5);
+    transition: transform .6s ease-in-out, backgroud-color .3s;
+}
+.controller-unit.is-center{
+    background-color: darkred;
+    transform: scale(1);
+}
+
+.controller-unit.is-inverse{
+    transform: rotateY(180deg);
+}
+
+.controller-unit.is-center::after{
+    color: #fff;
+    font-family: 'turn';
+    font-size: 80%;
+    line-height: 35px;
+    content: '\e634';
+}
+.controller-unit.is-inverse{
+    transform: rotateY(180deg);
+}
